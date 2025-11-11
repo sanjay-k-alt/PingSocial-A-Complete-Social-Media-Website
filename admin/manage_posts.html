@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Posts - Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin_style.css">
+</head>
+<body>
+
+    <div class="admin-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>PingSocial Admin</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="manage_users.html"><i class="fas fa-users"></i> Manage Users</a></li>
+                <li class="active"><a href="manage_posts.html"><i class="fas fa-file-alt"></i> Manage Posts</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="../client/home.html" target="_blank"><i class="fas fa-external-link-alt"></i> View Public Site</a></li>               
+                <li><a href="admin_index.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Manage Posts</h1>
+                <p>Review, approve, and remove user-submitted posts.</p>
+            </header>
+
+            <div class="toolbar">
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search by author or content...">
+                </div>
+                <select class="filter-select">
+                    <option value="all">All Posts</option>
+                    <option value="reported">Reported</option>
+                    <option value="removed">Removed</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Post Content</th>
+                                <th>Author</th>
+                                <th>Date Posted</th>
+                                <th>Reports</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="reported-row">
+                                <td>
+                                    <div class="post-preview">
+                                        <p class="post-text">This is a sample post that violates community guidelines and has been reported.</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-info">
+                                        <img src="images/bob.jpeg" alt="Bob Williams's profile picture">
+                                        <span>Bob Williams</span>
+                                    </div>
+                                </td>
+                                <td>2025-09-17</td>
+                                <td><span class="report-count">8</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view"><i class="fas fa-eye"></i></button>
+                                        <button class="action-btn dismiss"><i class="fas fa-check"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <div class="post-preview">
+                                         <img src="images/amazing-animal-beautiful-beautifull.jpg" class="post-thumbnail" alt="Post thumbnail">
+                                        <p class="post-text">Enjoying the beautiful sunset from my balcony. Feeling blessed! 🌅 #sunset #peaceful</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-info">
+                                        <img src="images/alice.jpeg" alt="Alice Johnson's profile picture">
+                                        <span>Alice Johnson</span>
+                                    </div>
+                                </td>
+                                <td>2025-09-16</td>
+                                <td>0</td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view"><i class="fas fa-eye"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="post-preview">
+                                        <p class="post-text">Just launched my new startup! Check it out at example.com #startup #entrepreneur #business</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-info">
+                                        <img src="images/bob.jpeg" alt="Charlie Brown's profile picture">
+                                        <span>Charlie Brown</span>
+                                    </div>
+                                </td>
+                                <td>2025-09-15</td>
+                                <td><span class="report-count">3</span></td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <button class="action-btn view"><i class="fas fa-eye"></i></button>
+                                        <button class="action-btn dismiss"><i class="fas fa-check"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <div class="pagination">
+                    <span>Page 1 of 5</span>
+                    <div class="pagination-buttons">
+                        <button disabled>&laquo; Prev</button>
+                        <button>Next &raquo;</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirm Action</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to perform this action?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary close-modal">Cancel</button>
+                <button id="confirm-action" class="btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="view-post-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>View Post</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Post content will be displayed here...</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="cover-photo">
+                <img src="images/cover-Photo.jpeg" alt="Cover Photo">
+            </div>
+            <div class="profile-details">
+                <div class="profile-picture-container">
+                    <img src="images/profile.jpeg" alt="Profile Picture" class="profile-picture">
+                </div>
+                <div class="profile-info">
+                    <h1>Sanjay</h1>
+                    <p>150 Friends</p>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn-primary">
+                        <i class="fas fa-plus"></i> Add to Story
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-pen"></i> Edit Profile
+                    </button>
+                </div>
+            </div>
+            <nav class="profile-nav">
+                <ul>
+                    <li class="active"><a href="#">Posts</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Check-ins</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="profile-body">
+            <div class="profile-left-col">
+                <div class="card">
+                    <h3>Intro</h3>
+                    <p class="intro-text">
+                        <i class="fas fa-briefcase"></i> Web Developer at Google
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-graduation-cap"></i> Studied at Stanford University
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-home"></i> Lives in San Francisco, California
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-map-marker-alt"></i> From Rajkot, Gujarat
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-heart"></i> Single
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-calendar-alt"></i> Joined June 2023
+                    </p>
+                    <button class="btn-secondary full-width">Edit Details</button>
+                </div>
+                <div class="card">
+                    <h3>Photos</h3>
+                    <div class="photo-grid">
+                        <img src="images/photo-1.jpeg" alt="Photo 1">
+                        <img src="images/photo-2.jpeg" alt="Photo 2">
+                        <img src="images/photo-3.jpeg" alt="Photo 3">
+                        <img src="images/post-image.jpeg" alt="Photo 4">
+                        <img src="images/amazing-animal-beautiful-beautifull.jpg" alt="Photo 5">
+                        <img src="images/photo-1.1.jpeg" alt="Photo 6">
+                    </div>
+                    <button class="btn-secondary full-width">See All Photos</button>
+                </div>
+                <div class="card">
+                    <h3>Friends</h3>
+                    <p>150 friends</p>
+                    <div class="friends-grid-mini">
+                        <div class="friend-mini">
+                            <img src="images/alice.jpeg" alt="Alice Johnson">
+                            <span>Alice Johnson</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/bob.jpeg" alt="Bob Williams">
+                            <span>Bob Williams</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/charlie.jpeg" alt="Charlie Brown">
+                            <span>Charlie Brown</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/diana.jpeg" alt="Diana Prince">
+                            <span>Diana Prince</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/alice.jpeg" alt="Friend 5">
+                            <span>Sarah Wilson</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/bob.jpeg" alt="Friend 6">
+                            <span>Mike Taylor</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary full-width">See All Friends</button>
+                </div>
+            </div>
+
+            <div class="profile-right-col">
+                <div class="card create-post-card">
+                    <div class="create-post-header">
+                        <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                        <textarea placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <div class="create-post-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-photo-video"></i> Photo/Video
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-user-tag"></i> Tag Friends
+                        </button>
+                        <button class="action-btn">
+                            <i class="fas fa-smile"></i> Feeling
+                        </button>
+                        <button class="btn-post">Post</button>
+                    </div>
+                </div>
+
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/profile.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Sanjay</strong>
+                                <small>Yesterday at 8:15 PM</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">Reflecting on my recent trip to the mountains. So refreshing! ⛰️ #nature #mountains #travel</p>
+                    <img src="images/post-image.jpeg" alt="Post Image" class="post-image">
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/profile.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Sanjay</strong>
+                                <small>2 days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">Just launched my new portfolio website! Check it out and let me know what you think. Built with React and Node.js 🚀 #webdev #portfolio #react</p>
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like <span class="like-count">42</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment <span class="comment-count">8</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share <span class="share-count">3</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/profile.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Sanjay</strong>
+                                <small>1 week ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">Celebrating 1 year at Google! So grateful for this amazing opportunity and the wonderful team I get to work with every day. 🎉 #workiversary #google #grateful</p>
+                    <img src="images/photo-1.jpeg" alt="Work Celebration" class="post-image">
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like <span class="like-count">128</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment <span class="comment-count">24</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share <span class="share-count">12</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice Johnson - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="cover-photo">
+                <img src="images/user-cover-photo.jpeg" alt="Cover Photo">
+            </div>
+            <div class="profile-details">
+                <div class="profile-picture-container">
+                    <img src="images/alice.jpeg" alt="Alice Johnson's Profile Picture" class="profile-picture">
+                </div>
+                <div class="profile-info">
+                    <h1>Alice Johnson</h1>
+                    <p>280 Friends</p>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn-primary">
+                        <i class="fas fa-user-plus"></i> Add Friend
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fab fa-facebook-messenger"></i> Message
+                    </button>
+                </div>
+            </div>
+            <nav class="profile-nav">
+                <ul>
+                    <li class="active"><a href="#">Posts</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="profile-body">
+            <div class="profile-left-col">
+                <div class="card">
+                    <h3>Intro</h3>
+                    <p class="intro-text">
+                        <i class="fas fa-briefcase"></i> Graphic Designer at ArtStudio
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-graduation-cap"></i> Studied at Design Institute
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-home"></i> Lives in London, UK
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-map-marker-alt"></i> From New York, USA
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-heart"></i> In a relationship
+                    </p>
+                    <p class="intro-text">
+                        <i class="fas fa-calendar-alt"></i> Joined January 2022
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Photos</h3>
+                    <div class="photo-grid">
+                        <img src="images/photo-1.1.jpeg" alt="Photo 1">
+                        <img src="images/photo-2.1.jpeg" alt="Photo 2">
+                        <img src="images/photo-3.1.jpeg" alt="Photo 3">
+                        <img src="images/photo-4.1.jpeg" alt="Photo 4">
+                        <img src="images/amazing-animal-beautiful-beautifull.jpg" alt="Photo 5">
+                        <img src="images/post-image.jpeg" alt="Photo 6">
+                    </div>
+                    <button class="btn-secondary full-width">See All Photos</button>
+                </div>
+                <div class="card">
+                    <h3>Friends</h3>
+                    <p>280 friends</p>
+                    <div class="friends-grid-mini">
+                        <div class="friend-mini">
+                            <img src="images/profile.jpeg" alt="Your Name">
+                            <span>Your Name</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/bob.jpeg" alt="Bob Williams">
+                            <span>Bob Williams</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/charlie.jpeg" alt="Charlie Brown">
+                            <span>Charlie Brown</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/diana.jpeg" alt="Diana Prince">
+                            <span>Diana Prince</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/alice.jpeg" alt="Friend 5">
+                            <span>Sarah Wilson</span>
+                        </div>
+                        <div class="friend-mini">
+                            <img src="images/bob.jpeg" alt="Friend 6">
+                            <span>Mike Taylor</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary full-width">See All Friends</button>
+                </div>
+            </div>
+
+            <div class="profile-right-col">
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/alice.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Alice Johnson</strong>
+                                <small>2 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">Enjoying the beautiful sunset from my balcony. Feeling blessed! 🌅 #sunset #peaceful #gratitude</p>
+                    <img src="images/amazing-animal-beautiful-beautifull.jpg" alt="Post Image" class="post-image">
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like <span class="like-count">45</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment <span class="comment-count">12</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share <span class="share-count">5</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/alice.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Alice Johnson</strong>
+                                <small>1 day ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">My latest design project is finally complete! So happy with how this branding turned out. 🎨 #graphicdesign #portfolio #branding #creativity</p>
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like <span class="like-count">78</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment <span class="comment-count">23</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share <span class="share-count">9</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/alice.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Alice Johnson</strong>
+                                <small>3 days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">Just visited the Tate Modern exhibition - absolutely breathtaking! The use of color and space in contemporary art never fails to inspire me. 🎨 #art #exhibition #london #inspiration</p>
+                    <img src="images/photo-1.1.jpeg" alt="Art Exhibition" class="post-image">
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like <span class="like-count">92</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment <span class="comment-count">31</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share <span class="share-count">14</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card post-card">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <img src="images/alice.jpeg" alt="User Profile" class="profile-pic">
+                            <div>
+                                <strong>Alice Johnson</strong>
+                                <small>1 week ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="post-content">Coffee and creativity - the perfect combination for a productive Monday! Working on some exciting new projects. ☕️ #design #creativity #mondaymotivation</p>
+                    <img src="images/photo-2.1.jpeg" alt="Coffee Workspace" class="post-image">
+                    <div class="post-footer">
+                        <button class="footer-action">
+                            <i class="far fa-thumbs-up"></i> Like <span class="like-count">156</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="far fa-comment-alt"></i> Comment <span class="comment-count">42</span>
+                        </button>
+                        <button class="footer-action">
+                            <i class="fas fa-share"></i> Share <span class="share-count">18</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

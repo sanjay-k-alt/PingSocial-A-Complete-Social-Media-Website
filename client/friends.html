@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon active"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="friends-container">
+        <div class="card">
+            <div class="friends-section">
+                <div class="friends-header">
+                    <h3>Friend Requests</h3>
+                    <a href="#" class="see-all-link">See All</a>
+                </div>
+                <div class="friend-request-list">
+                    <div class="friend-card request">
+                        <a href="user_profile.html">
+                            <img src="images/charlie.jpeg" alt="Charlie Brown">
+                        </a>
+                        <h4>Charlie Brown</h4>
+                        <p>3 mutual friends</p>
+                        <div class="request-buttons">
+                            <button class="btn-primary">Confirm</button>
+                            <button class="btn-secondary">Delete</button>
+                        </div>
+                    </div>
+                    <div class="friend-card request">
+                        <a href="user_profile.html">
+                            <img src="images/diana.jpeg" alt="Diana Prince">
+                        </a>
+                        <h4>Diana Prince</h4>
+                        <p>1 mutual friend</p>
+                        <div class="request-buttons">
+                            <button class="btn-primary">Confirm</button>
+                            <button class="btn-secondary">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="friends-section">
+                <div class="friends-header">
+                    <h3>All Friends <span class="friend-count">(150)</span></h3>
+                    <div class="search-friends">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Friends">
+                    </div>
+                </div>
+                <div class="friends-grid">
+                    <div class="friend-card">
+                        <a href="user_profile.html">
+                            <img src="images/alice.jpeg" alt="Alice Johnson">
+                        </a>
+                        <h4>Alice Johnson</h4>
+                        <p>5 mutual friends</p>
+                        <button class="btn-secondary full-width">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="friend-card">
+                        <a href="user_profile.html">
+                            <img src="images/bob.jpeg" alt="Bob Williams">
+                        </a>
+                        <h4>Bob Williams</h4>
+                        <p>2 mutual friends</p>
+                        <button class="btn-secondary full-width">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="friend-card">
+                        <a href="user_profile.html">
+                            <img src="images/charlie.jpeg" alt="Charlie Brown">
+                        </a>
+                        <h4>Charlie Brown</h4>
+                        <p>8 mutual friends</p>
+                        <button class="btn-secondary full-width">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                    <div class="friend-card">
+                        <a href="user_profile.html">
+                            <img src="images/diana.jpeg" alt="Diana Prince">
+                        </a>
+                        <h4>Diana Prince</h4>
+                        <p>12 mutual friends</p>
+                        <button class="btn-secondary full-width">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

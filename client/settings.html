@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="settings-container">
+        <aside class="settings-nav">
+            <ul>
+                <li><a href="#edit-profile"><i class="fas fa-user-edit"></i> Edit Profile</a></li>
+                <li><a href="#account"><i class="fas fa-user-cog"></i> Account</a></li>
+                <li><a href="#privacy"><i class="fas fa-shield-alt"></i> Privacy & Safety</a></li>
+                <li><a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#blocking"><i class="fas fa-ban"></i> Blocking</a></li>
+                <li><a href="#language"><i class="fas fa-globe"></i> Language</a></li>
+            </ul>
+        </aside>
+
+        <main class="settings-content">
+            <section id="edit-profile" class="settings-section card">
+                <h2>Edit Profile</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" value="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" value="yourname">
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" rows="3">Web Developer at Google. Living in San Francisco.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" value="San Francisco, California">
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website</label>
+                        <input type="url" id="website" value="https://yourwebsite.com">
+                    </div>
+                    <button type="submit" class="btn-primary">Save Changes</button>
+                </form>
+            </section>
+
+            <section id="account" class="settings-section card">
+                <h2>Account</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" value="your.name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" value="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Change Password</label>
+                        <input type="password" id="password" placeholder="Enter new password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm New Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm new password">
+                    </div>
+                    <button type="submit" class="btn-primary">Update Account</button>
+                </form>
+                <hr>
+                <div class="danger-zone">
+                    <h4>Deactivate Account</h4>
+                    <p>This action cannot be undone. All your data will be permanently deleted.</p>
+                    <button class="btn-danger">Deactivate Account</button>
+                </div>
+            </section>
+            
+            <section id="privacy" class="settings-section card">
+                <h2>Privacy & Safety</h2>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h4>Who can see your posts?</h4>
+                        <p>Control the default audience for your posts.</p>
+                    </div>
+                    <select>
+                        <option>Public</option>
+                        <option selected>Friends</option>
+                        <option>Only Me</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h4>Allow friend requests from</h4>
+                        <p>Choose who is allowed to send you friend requests.</p>
+                    </div>
+                    <select>
+                        <option selected>Everyone</option>
+                        <option>Friends of Friends</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h4>Make your profile private</h4>
+                        <p>Only your friends will be able to see your profile details and posts.</p>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h4>Allow search engines to link to your profile</h4>
+                        <p>Let search engines outside PingSocial link to your profile.</p>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </section>
+
+            <section id="blocking" class="settings-section card">
+                <h2>Blocking</h2>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h4>Blocked Users</h4>
+                        <p>Manage people you've blocked</p>
+                    </div>
+                    <button class="btn-secondary">Manage Blocked Users</button>
+                </div>
+                <div class="setting-item">
+                    <div class="setting-info">
+                        <h4>Restricted Accounts</h4>
+                        <p>Limit interactions with certain people without unfriending them</p>
+                    </div>
+                    <button class="btn-secondary">Manage Restricted Accounts</button>
+                </div>
+            </section>
+
+            <section id="language" class="settings-section card">
+                <h2>Language & Region</h2>
+                <div class="form-group">
+                    <label for="language-select">Language</label>
+                    <select id="language-select">
+                        <option selected>English (US)</option>
+                        <option>English (UK)</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Hindi</option>
+                        <option>Gujarati</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="timezone">Timezone</label>
+                    <select id="timezone">
+                        <option selected>(UTC-08:00) Pacific Time</option>
+                        <option>(UTC-07:00) Mountain Time</option>
+                        <option>(UTC-06:00) Central Time</option>
+                        <option>(UTC-05:00) Eastern Time</option>
+                        <option>(UTC+05:30) India Standard Time</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Save Preferences</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="groups-container">
+        <div class="card">
+            <div class="pages-header">
+                <h2>Groups</h2>
+                <button class="btn-primary">
+                    <i class="fas fa-plus"></i> Create New Group
+                </button>
+            </div>
+            
+            <nav class="friends-tabs">
+                <a href="#" class="active">For You</a>
+                <a href="#">Your Groups</a>
+                <a href="#">Discover</a>
+            </nav>
+
+            <div class="groups-grid">
+                <div class="group-card">
+                    <a href="#" class="group-card-link">
+                        <img src="images/webDevelopers.jpeg" class="group-cover-photo" alt="Group Cover">
+                        <div class="group-card-body">
+                            <h4>Web Developers Hangout</h4>
+                            <p>8.2K members &middot; 20+ posts a day</p>
+                        </div>
+                    </a>
+                    <div class="group-card-footer">
+                        <button class="btn-primary full-width">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <a href="#" class="group-card-link">
+                        <img src="images/abstract.jpeg" class="group-cover-photo" alt="Group Cover">
+                        <div class="group-card-body">
+                            <h4>Abstract Art Lovers</h4>
+                            <p>1.5K members &middot; 5+ posts a day</p>
+                        </div>
+                    </a>
+                    <div class="group-card-footer">
+                        <button class="btn-primary full-width">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <a href="#" class="group-card-link">
+                        <img src="images/startup.jpeg" class="group-cover-photo" alt="Group Cover">
+                        <div class="group-card-body">
+                            <h4>Startup Founders Club</h4>
+                            <p>22K members &middot; 50+ posts a day</p>
+                        </div>
+                    </a>
+                    <div class="group-card-footer">
+                        <button class="btn-secondary full-width">View Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <a href="#" class="group-card-link">
+                        <img src="images/photo-1.jpeg" class="group-cover-photo" alt="Group Cover">
+                        <div class="group-card-body">
+                            <h4>Photography Enthusiasts</h4>
+                            <p>15K members &middot; 30+ posts a day</p>
+                        </div>
+                    </a>
+                    <div class="group-card-footer">
+                        <button class="btn-primary full-width">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <a href="#" class="group-card-link">
+                        <img src="images/photo-2.jpeg" class="group-cover-photo" alt="Group Cover">
+                        <div class="group-card-body">
+                            <h4>Fitness & Wellness</h4>
+                            <p>45K members &middot; 100+ posts a day</p>
+                        </div>
+                    </a>
+                    <div class="group-card-footer">
+                        <button class="btn-primary full-width">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <a href="#" class="group-card-link">
+                        <img src="images/photo-3.jpeg" class="group-cover-photo" alt="Group Cover">
+                        <div class="group-card-body">
+                            <h4>Book Club</h4>
+                            <p>7.8K members &middot; 15+ posts a day</p>
+                        </div>
+                    </a>
+                    <div class="group-card-footer">
+                        <button class="btn-secondary full-width">View Group</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

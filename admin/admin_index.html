@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Authentication - PingSocial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/admin_style.css">
+</head>
+<body class="admin-login-page">
+
+    <div class="login-container">
+        <div class="login-header">
+            <h1>PingSocial</h1>
+            <h2>Admin Panel</h2>
+        </div>
+        
+        <div class="login-tabs">
+            <button class="login-tab active" data-tab="login">Login</button>
+            <button class="login-tab" data-tab="signup">Sign Up</button>
+        </div>
+
+        <!-- Login Tab -->
+        <div id="login-tab" class="tab-content active">
+            <form id="login-form" action="dashboard.html" method="post">
+                <div class="input-group">
+                    <label for="admin-email">Email Address</label>
+                    <input type="email" id="admin-email" name="email" placeholder="admin@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="admin-password">Password</label>
+                    <input type="password" id="admin-password" name="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-admin-login">
+                    <i class="fas fa-sign-in-alt"></i> Log In
+                </button>
+            </form>
+            
+            <div class="login-footer-links">
+                <a href="#" onclick="switchToTab('forgot-password')">Forgot Password?</a>
+                <a href="#" onclick="switchToTab('signup')">Create Admin Account</a>
+            </div>
+        </div>
+
+        <!-- Sign Up Tab -->
+        <div id="signup-tab" class="tab-content">
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="signup-email" placeholder="admin@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="signup-password" placeholder="••••••••" required>
+                    <div class="password-strength">
+                        <div class="strength-bar"></div>
+                    </div>
+                    <div class="password-requirements">
+                        <div class="requirement unmet" data-requirement="length">
+                            <i class="fas fa-circle"></i> At least 8 characters
+                        </div>
+                        <div class="requirement unmet" data-requirement="uppercase">
+                            <i class="fas fa-circle"></i> One uppercase letter
+                        </div>
+                        <div class="requirement unmet" data-requirement="lowercase">
+                            <i class="fas fa-circle"></i> One lowercase letter
+                        </div>
+                        <div class="requirement unmet" data-requirement="number">
+                            <i class="fas fa-circle"></i> One number
+                        </div>
+                        <div class="requirement unmet" data-requirement="special">
+                            <i class="fas fa-circle"></i> One special character
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+                </div>
+                <div class="input-group">
+                    <label for="admin-code">Admin Invite Code</label>
+                    <input type="text" id="admin-code" name="admin-code" placeholder="Enter admin invite code" required>
+                    <small style="color: #6b7280; font-size: 0.8rem; margin-top: 5px;">
+                        Contact system administrator to get your invite code
+                    </small>
+                </div>
+                <button type="submit" class="btn btn-admin-login">
+                    <i class="fas fa-user-plus"></i> Create Admin Account
+                </button>
+            </form>
+            
+            <div class="login-footer-links">
+                <a href="#" onclick="switchToTab('login')">
+                    <i class="fas fa-arrow-left"></i> Back to Login
+                </a>
+            </div>
+        </div>
+
+        <!-- Forgot Password Tab -->
+        <div id="forgot-password-tab" class="tab-content">
+            <form id="forgot-password-form">
+                <div class="input-group">
+                    <label for="forgot-email">Email Address</label>
+                    <input type="email" id="forgot-email" name="email" placeholder="admin@example.com" required>
+                    <small style="color: #6b7280; font-size: 0.8rem; margin-top: 5px;">
+                        Enter your admin email address to receive password reset instructions
+                    </small>
+                </div>
+                <button type="submit" class="btn btn-admin-login">
+                    <i class="fas fa-paper-plane"></i> Send Reset Instructions
+                </button>
+            </form>
+            
+            <div class="login-footer-links">
+                <a href="#" onclick="switchToTab('login')">
+                    <i class="fas fa-arrow-left"></i> Back to Login
+                </a>
+            </div>
+        </div>
+
+        <!-- Verification Tab -->
+        <div id="verification-tab" class="tab-content">
+            <h3 style="text-align: center; margin-bottom: 10px;">Verify Your Email</h3>
+            <p style="text-align: center; color: #6b7280; margin-bottom: 30px;">
+                We've sent a 6-digit verification code to your email address
+            </p>
+            
+            <div class="verification-code">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+            </div>
+            
+            <div class="resend-code">
+                Didn't receive the code? <a href="#" onclick="resendCode()">Resend Code</a>
+            </div>
+            
+            <div class="back-to-login">
+                <a href="#" onclick="switchToTab('login')">
+                    <i class="fas fa-arrow-left"></i> Back to Login
+                </a>
+            </div>
+        </div>
+
+        <!-- Reset Password Tab -->
+        <div id="reset-password-tab" class="tab-content">
+            <form id="reset-password-form">
+                <div class="input-group">
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password" name="new-password" placeholder="••••••••" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password-reset">Confirm New Password</label>
+                    <input type="password" id="confirm-password-reset" name="confirm-password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-admin-login">
+                    <i class="fas fa-lock"></i> Reset Password
+                </button>
+            </form>
+            
+            <div class="login-footer-links">
+                <a href="#" onclick="switchToTab('login')">
+                    <i class="fas fa-arrow-left"></i> Back to Login
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="js/admin_script.js"></script>
+    <script>
+        // Initialize login page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeLoginPage();
+            
+            // Handle form submissions
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            
+            if (loginForm) {
+                loginForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('#admin-email').value;
+                    const password = this.querySelector('#admin-password').value;
+                    
+                    // Simple validation
+                    if (email && password) {
+                        showToast('Login successful! Redirecting...', 'success');
+                        setTimeout(() => {
+                            window.location.href = 'dashboard.html';
+                        }, 1500);
+                    } else {
+                        showToast('Please fill in all fields', 'error');
+                    }
+                });
+            }
+            
+            if (signupForm) {
+                signupForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    handleSignup(this);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

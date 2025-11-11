@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon active"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="notifications-container">
+        <div class="card">
+            <div class="notifications-header">
+                <h2>Notifications</h2>
+                <div class="notification-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Unread</button>
+                </div>
+            </div>
+            <div class="notification-list">
+                <a href="#" class="notification-item unread">
+                    <img src="images/alice.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="notification-content">
+                        <p><strong>Alice Johnson</strong> commented on your photo: "This looks amazing!"</p>
+                        <span class="timestamp">15 minutes ago</span>
+                    </div>
+                    <div class="unread-dot"></div>
+                </a>
+
+                <a href="#" class="notification-item unread">
+                    <img src="images/bob.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="notification-content">
+                        <p><strong>Bob Williams</strong> liked your post: "Just finished a 10km run..."</p>
+                        <span class="timestamp">1 hour ago</span>
+                    </div>
+                    <div class="unread-dot"></div>
+                </a>
+
+                <a href="#" class="notification-item">
+                    <img src="images/charlie.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="notification-content">
+                        <p><strong>Charlie Brown</strong> sent you a friend request.</p>
+                        <span class="timestamp">5 hours ago</span>
+                    </div>
+                </a>
+
+                <a href="#" class="notification-item">
+                    <img src="images/diana.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="notification-content">
+                        <p><strong>Diana Prince</strong> mentioned you in a comment.</p>
+                        <span class="timestamp">Yesterday</span>
+                    </div>
+                    <img src="images/amazing-animal-beautiful-beautifull.jpg" class="notification-thumbnail" alt="Post thumbnail">
+                </a>
+
+                <a href="#" class="notification-item">
+                    <img src="images/alice.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="notification-content">
+                        <p><strong>Alice Johnson</strong> shared your post.</p>
+                        <span class="timestamp">2 days ago</span>
+                    </div>
+                </a>
+
+                <a href="#" class="notification-item">
+                    <img src="images/bob.jpeg" alt="User Profile" class="profile-pic">
+                    <div class="notification-content">
+                        <p><strong>Bob Williams</strong> reacted to your comment.</p>
+                        <span class="timestamp">3 days ago</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

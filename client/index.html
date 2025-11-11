@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to PingSocial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .landing-wrapper {
+      display: flex;
+      width: 900px;
+      height: 520px;
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-side {
+      flex: 1;
+      background-color: #007bff;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .info-content {
+      max-width: 320px;
+      text-align: left;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .info-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .form-side {
+      flex: 1;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-container {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .form-footer a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="landing-wrapper">
+    <div class="info-side">
+      <div class="info-content">
+        <h1 class="logo">PingSocial</h1>
+        <p>
+          Connect with friends and the world around you on PingSocial. 
+          Share photos, send messages, and stay in touch with your community.
+        </p>
+      </div>
+    </div>
+
+    <div class="form-side">
+      <div class="form-container" id="login-container">
+        <h2>PingSocial</h2>
+        <form action="home.html" method="get">
+          <div class="input-group">
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" placeholder="you@example.com" required>
+          </div>
+          <div class="input-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+        <div class="form-footer">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+          <p>Don't have an account? <a href="#" id="show-signup-link">Sign Up</a></p>
+        
+          </a>
+        </div>
+      </div>
+
+      <div class="form-container hidden" id="signup-container">
+        <h2>Join PingSocial Today</h2>
+        <form action="home.html" method="get">
+          <div class="input-group">
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <label for="signup-email">Email Address</label>
+            <input type="email" id="signup-email" placeholder="you@example.com" required>
+          </div>
+          <div class="input-group">
+            <label for="signup-password">Create Password</label>
+            <input type="password" id="signup-password" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+        <div class="form-footer">
+          <p>Already have an account? <a href="#" id="show-login-link">Log In</a></p>
+          
+          </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

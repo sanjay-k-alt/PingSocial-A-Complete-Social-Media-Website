@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin_style.css">
+</head>
+<body>
+
+    <div class="admin-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>PingSocial Admin</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="active"><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="manage_users.html"><i class="fas fa-users"></i> Manage Users</a></li>
+                <li><a href="manage_posts.html"><i class="fas fa-file-alt"></i> Manage Posts</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li><a href="../client/home.html" target="_blank"><i class="fas fa-external-link-alt"></i> View Public Site</a></li>
+                <li><a href="admin_index.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Dashboard Overview</h1>
+                <p>Welcome back, Admin!</p>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="card-icon" style="background-color: #e0f2fe;">
+                        <i class="fas fa-users" style="color: #0ea5e9;"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>1,250</h3>
+                        <p>Total Users</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="card-icon" style="background-color: #dcfce7;">
+                        <i class="fas fa-plus-circle" style="color: #22c55e;"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>+32</h3>
+                        <p>New Signups (24h)</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="card-icon" style="background-color: #fefce8;">
+                        <i class="fas fa-file-alt" style="color: #eab308;"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>5,430</h3>
+                        <p>Active Posts</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="card-icon" style="background-color: #fee2e2;">
+                        <i class="fas fa-exclamation-triangle" style="color: #ef4444;"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>15</h3>
+                        <p>Reported Content</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="card chart-container">
+                    <h3>User Growth</h3>
+                    <div class="chart-placeholder">
+                        A line chart showing user registrations over the last 30 days would go here.
+                    </div>
+                </div>
+                <div class="card recent-activity">
+                    <h3>Recent Signups</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Email</th>
+                                <th>Date Joined</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alice Johnson</td>
+                                <td>alice@example.com</td>
+                                <td>2025-09-17</td>
+                            </tr>
+                            <tr>
+                                <td>Bob Williams</td>
+                                <td>bob@example.com</td>
+                                <td>2025-09-17</td>
+                            </tr>
+                            <tr>
+                                <td>Charlie Brown</td>
+                                <td>charlie@example.com</td>
+                                <td>2025-09-16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Confirm Action</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to perform this action?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary close-modal">Cancel</button>
+                <button id="confirm-action" class="btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin_script.js"></script>
+</body>
+</html>

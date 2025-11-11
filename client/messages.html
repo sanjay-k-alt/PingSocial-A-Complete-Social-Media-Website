@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon active"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel"
+                ><i class="fas fa-sliders-h"></i
+                ></a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="messenger-container">
+        <aside class="conversations-list">
+            <div class="list-header">
+                <h2>Chats</h2>
+                <div class="search-chats">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search messages">
+                </div>
+            </div>
+            <ul class="conversation-items">
+                <li class="conversation active">
+                    <img src="images/alice.jpeg" alt="Alice Johnson" class="profile-pic">
+                    <div class="conversation-details">
+                        <strong>Alice Johnson</strong>
+                        <p>Sounds good! See you then.</p>
+                    </div>
+                    <span class="timestamp">15m</span>
+                </li>
+                <li class="conversation">
+                    <img src="images/bob.jpeg" alt="Bob Williams" class="profile-pic">
+                    <div class="conversation-details">
+                        <strong>Bob Williams</strong>
+                        <p>You: Yeah, that project was tough.</p>
+                    </div>
+                    <span class="timestamp">1h</span>
+                </li>
+                 <li class="conversation unread">
+                    <img src="images/charlie.jpeg" alt="Charlie Brown" class="profile-pic">
+                    <div class="conversation-details">
+                        <strong>Charlie Brown</strong>
+                        <p>Can you send me the file?</p>
+                    </div>
+                    <span class="timestamp">3h</span>
+                </li>
+                 <li class="conversation">
+                    <img src="images/diana.jpeg" alt="Diana Prince" class="profile-pic">
+                    <div class="conversation-details">
+                        <strong>Diana Prince</strong>
+                        <p>You: Happy Birthday! 🎉</p>
+                    </div>
+                    <span class="timestamp">Yesterday</span>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="chat-window">
+            <header class="chat-header">
+                <a href="#" class="back-button"><i class="fas fa-arrow-left"></i></a>
+                <img src="images/alice.jpeg" alt="Alice Johnson" class="profile-pic">
+                <h3>Alice Johnson</h3>
+            </header>
+            <div class="chat-body">
+                <div class="message received">
+                    <p>Hey! Are you free to catch up tomorrow?</p>
+                    <span class="message-time">10:30 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Hey Alice! Yeah, absolutely. How about coffee around 2 PM?</p>
+                    <span class="message-time">10:31 AM</span>
+                </div>
+                 <div class="message received">
+                    <p>Perfect! I know a great spot downtown.</p>
+                    <span class="message-time">10:32 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>Sounds good! See you then.</p>
+                    <span class="message-time">10:32 AM</span>
+                </div>
+            </div>
+            <footer class="chat-footer">
+                <button class="icon-btn"><i class="fas fa-paperclip"></i></button>
+                <input type="text" placeholder="Type a message...">
+                <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - PingSocial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="home.html" class="logo">PingSocial</a>
+            </div>
+            <div class="nav-center">
+                <a href="home.html" class="nav-icon"><i class="fas fa-home"></i></a>
+                <a href="friends.html" class="nav-icon"><i class="fas fa-user-friends"></i></a>
+                <a href="messages.html" class="nav-icon"><i class="fas fa-envelope"></i></a>
+                <a href="notifications.html" class="nav-icon"><i class="fas fa-bell"></i></a>
+            </div>
+            <div class="nav-right">
+                <a href="profile.html" class="profile-link">
+                    <img src="images/profile.jpeg" alt="My Profile" class="profile-pic">
+                    <span>Sanjay</span>
+                </a>
+                <a href="../admin/admin_index.html" class="nav-icon" title="Admin Panel">
+                    <i class="fas fa-sliders-h"></i>
+                </a>
+                <a href="index.html" class="nav-icon logout-icon" title="Logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <a href="index.html" class="btn">Login</a>
+        </div>
+    </nav>
+
+    <div class="marketplace-container">
+        <aside class="marketplace-sidebar card">
+            <h2>Marketplace</h2>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Marketplace">
+            </div>
+            <hr>
+            <h4>Categories</h4>
+            <ul class="category-list">
+                <li class="active"><a href="#"><i class="fas fa-tags"></i> Browse All</a></li>
+                <li><a href="#"><i class="fas fa-car"></i> Vehicles</a></li>
+                <li><a href="#"><i class="fas fa-tshirt"></i> Clothing & Apparel</a></li>
+                <li><a href="#"><i class="fas fa-mobile-alt"></i> Electronics</a></li>
+                <li><a href="#"><i class="fas fa-couch"></i> Furniture</a></li>
+                <li><a href="#"><i class="fas fa-home"></i> Property Rentals</a></li>
+                <li><a href="#"><i class="fas fa-briefcase"></i> Jobs</a></li>
+                <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
+            </ul>
+            <hr>
+            <button class="btn-primary full-width">
+                <i class="fas fa-plus"></i> Create New Listing
+            </button>
+        </aside>
+
+        <main class="marketplace-content">
+            <h3>Today's Picks in Rajkot, Gujarat</h3>
+            <div class="product-grid">
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/woodenStudy.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹8,500</h4>
+                            <p class="product-title">Wooden Study Table</p>
+                            <p class="product-location">Kalawad Road, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/usedAcousti.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹12,000</h4>
+                            <p class="product-title">Used Acoustic Guitar</p>
+                            <p class="product-location">University Road, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/set-of-4-Dining-Chairs.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹2,500</h4>
+                            <p class="product-title">Set of 4 Dining Chairs</p>
+                            <p class="product-location">Gondal Road, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/photo-1.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹25,000</h4>
+                            <p class="product-title">iPhone 12 Pro Max</p>
+                            <p class="product-location">Mota Mava, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/photo-2.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹15,000</h4>
+                            <p class="product-title">Sony DSLR Camera</p>
+                            <p class="product-location">Jalaram Road, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/photo-3.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹5,000</h4>
+                            <p class="product-title">Office Chair</p>
+                            <p class="product-location">Dhebar Road, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/post-image.jpeg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹45,000</h4>
+                            <p class="product-title">MacBook Air 2020</p>
+                            <p class="product-location">Race Course, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <img src="images/amazing-animal-beautiful-beautifull.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h4>₹8,000</h4>
+                            <p class="product-title">Mountain Bike</p>
+                            <p class="product-location">Amin Marg, Rajkot</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
