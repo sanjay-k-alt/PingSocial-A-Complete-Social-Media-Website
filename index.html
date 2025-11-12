@@ -17,7 +17,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .landing-wrapper {
@@ -138,6 +138,58 @@
     .hidden {
       display: none;
     }
+
+    /* ✅ Responsive Design */
+    @media (max-width: 900px) {
+      .landing-wrapper {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+      }
+
+      .info-side {
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .info-content {
+        max-width: 100%;
+      }
+
+      .logo {
+        font-size: 32px;
+      }
+
+      .form-side {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 10px;
+      }
+
+      .form-container {
+        max-width: 100%;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .logo {
+        font-size: 28px;
+      }
+
+      input {
+        font-size: 13px;
+      }
+
+      .btn {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -170,8 +222,6 @@
         <div class="form-footer">
           <a href="#" class="forgot-password">Forgot Password?</a>
           <p>Don't have an account? <a href="#" id="show-signup-link">Sign Up</a></p>
-        
-          </a>
         </div>
       </div>
 
@@ -194,8 +244,6 @@
         </form>
         <div class="form-footer">
           <p>Already have an account? <a href="#" id="show-login-link">Log In</a></p>
-          
-          </a></p>
         </div>
       </div>
     </div>
@@ -205,5 +253,3 @@
 
 </body>
 </html>
-
-
